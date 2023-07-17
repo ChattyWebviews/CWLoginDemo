@@ -11,6 +11,8 @@
 		2B09DAB62A613FA400A2520D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B09DAB52A613FA400A2520D /* ContentView.swift */; };
 		2B09DAB82A613FA500A2520D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B09DAB72A613FA500A2520D /* Assets.xcassets */; };
 		2B09DABB2A613FA500A2520D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B09DABA2A613FA500A2520D /* Preview Assets.xcassets */; };
+		2B09E6062A6165B200A2520D /* demo in Resources */ = {isa = PBXBuildFile; fileRef = 2B09E6052A6165B200A2520D /* demo */; };
+		2B09E60F2A62A76800A2520D /* ChattyWebviews in Frameworks */ = {isa = PBXBuildFile; productRef = 2B09E60E2A62A76800A2520D /* ChattyWebviews */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,7 @@
 		2B09DAB52A613FA400A2520D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2B09DAB72A613FA500A2520D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B09DABA2A613FA500A2520D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2B09E6052A6165B200A2520D /* demo */ = {isa = PBXFileReference; lastKnownFileType = folder; path = demo; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B09E60F2A62A76800A2520D /* ChattyWebviews in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,6 +39,7 @@
 		2B09DAA72A613FA300A2520D = {
 			isa = PBXGroup;
 			children = (
+				2B09E6052A6165B200A2520D /* demo */,
 				2B09DAB22A613FA400A2520D /* CWLoginDemo */,
 				2B09DAB12A613FA400A2520D /* Products */,
 			);
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = CWLoginDemo;
+			packageProductDependencies = (
+				2B09E60E2A62A76800A2520D /* ChattyWebviews */,
+			);
 			productName = CWLoginDemo;
 			productReference = 2B09DAB02A613FA400A2520D /* CWLoginDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 2B09DAA72A613FA300A2520D;
+			packageReferences = (
+				2B09E60D2A62A76800A2520D /* XCRemoteSwiftPackageReference "ChattyWebviews" */,
+			);
 			productRefGroup = 2B09DAB12A613FA400A2520D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,6 +136,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B09E6062A6165B200A2520D /* demo in Resources */,
 				2B09DABB2A613FA500A2520D /* Preview Assets.xcassets in Resources */,
 				2B09DAB82A613FA500A2520D /* Assets.xcassets in Resources */,
 			);
@@ -339,6 +351,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2B09E60D2A62A76800A2520D /* XCRemoteSwiftPackageReference "ChattyWebviews" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ChattyWebviews/ChattyWebviews";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2B09E60E2A62A76800A2520D /* ChattyWebviews */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2B09E60D2A62A76800A2520D /* XCRemoteSwiftPackageReference "ChattyWebviews" */;
+			productName = ChattyWebviews;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2B09DAA82A613FA300A2520D /* Project object */;
 }
